@@ -47,14 +47,10 @@ namespace UnDemolish
                         if (paramPhaseDemo != null)
                         {
                             // set the value of "Phase Demolished" to "None"
-                            paramPhaseDemo.Set("None");
+                            paramPhaseDemo.Set(ElementId.InvalidElementId);
 
                             // commit the transaction
-                            t.Commit();
-
-                            // alert the user
-                            TaskDialog.Show("Success", "The Phase Demolished parameter has been set to None.");
-                            return Result.Succeeded;
+                            t.Commit();                            
                         }
                         else
                         {
