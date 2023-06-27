@@ -69,6 +69,8 @@
     <Compile Include="Utils\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Undemolish_16.jpg" />
+    <EmbeddedResource Include="Resources\Undemolish_32.jpg" />
     <Content Include="UnDemolish.addin" />
     <EmbeddedResource Include="Resources\Yellow_32.png" />
     <EmbeddedResource Include="Resources\Yellow_16.png" />

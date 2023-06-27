@@ -17,24 +17,16 @@ namespace UnDemolish
     {
         public Result OnStartup(UIControlledApplication app)
         {
-            // 1. Create ribbon tab
-            try
-            {
-                app.CreateRibbonTab("Revit Add-in Academy");
-            }
-            catch (Exception)
-            {
-                Debug.Print("Tab already exists.");
-            }
+            // Create ribbon panel 
+            RibbonPanel panel = app.CreateRibbonPanel("Broda Architect");
 
-            // 2. Create ribbon panel 
-            RibbonPanel panel = Utils.CreateRibbonPanel(app, "Revit Add-in Academy", "Revit Tools");
+            // Create button data instances
+            ButtonDataClass btnUndemolish = new ButtonDataClass("btnUnDemolish", "Undemolish", cmdUnDemolish.GetMethod(),
+                Properties.Resources.Undemolish_32, Properties.Resources.Undemolish_16,
+                "Sets the Phase Demolioshed paramter to None for the selected item");
 
-            // 3. Create button data instances
-            ButtonDataClass myButtonData = new ButtonDataClass("btnUnDemolish", "My Button", cmdUnDemolish.GetMethod(), Properties.Resources.Blue_32, Properties.Resources.Blue_16, "This is a tooltip");
-
-            // 4. Create buttons
-            PushButton myButton = panel.AddItem(myButtonData.Data) as PushButton;
+            // Create buttons
+            PushButton btnData1 = panel.AddItem(btnUndemolish.Data) as PushButton;
             return Result.Succeeded;
         }
 
@@ -42,7 +34,5 @@ namespace UnDemolish
         {
             return Result.Succeeded;
         }
-
-
     }
 }
