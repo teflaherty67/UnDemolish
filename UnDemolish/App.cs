@@ -18,7 +18,7 @@ namespace UnDemolish
         public Result OnStartup(UIControlledApplication app)
         {
             // Create ribbon panel 
-            RibbonPanel panel = app.CreateRibbonPanel("Broda Architect");
+            RibbonPanel panel = app.CreateRibbonPanel("Modify");
 
             // Create button data instances
             ButtonDataClass btnUndemolish = new ButtonDataClass("btnUnDemolish", "Undemolish", cmdUnDemolish.GetMethod(),

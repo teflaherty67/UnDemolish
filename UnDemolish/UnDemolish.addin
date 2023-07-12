@@ -1,20 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RevitAddIns>
-  <AddIn Type="Command">
-    <Text>Command UnDemolish</Text>
-    <Description>Some description for UnDemolish</Description>
-    <Assembly>UnDemolish.dll</Assembly>
-    <FullClassName>UnDemolish.cmdUnDemolish</FullClassName>
-    <ClientId>0791b9dd-dfed-458a-bb52-bfe50802e6a0</ClientId>
-    <VendorId>com.YOUR COMPANY NAME</VendorId>
-    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
-  </AddIn>
+<RevitAddIns>  
   <AddIn Type="Application">
     <Name>Application UnDemolish</Name>
     <Assembly>UnDemolish.dll</Assembly>
     <FullClassName>UnDemolish.App</FullClassName>
     <ClientId>419b7b8b-ed10-4db5-ab1b-c3150abcbf15</ClientId>
-    <VendorId>com.YOUR COMPANY NAME</VendorId>
-    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+    <VendorId>ArchCoder</VendorId>
+    <VendorDescription>ArchCoder</VendorDescription>
   </AddIn>
 </RevitAddIns>
